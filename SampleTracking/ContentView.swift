@@ -8,50 +8,29 @@
 import SwiftUI
 import RealityKit
 import RealityKitContent
+import Vision
+import AVFoundation
+import VisionKit
 
-struct ContentView: View {
 
-    @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
-
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+struct ContentView: View { // declares a structure named "ContentView' that conforms to the 'View' protocol.
+    @State private var showScanner = false // '@State' property wrapper that tells SwuftUI to manage this property and update the view whenever the property's value changes
 
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-
-            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
-                .font(.title)
-                .frame(width: 360)
-                .padding(24)
-                .glassBackgroundEffect()
-        }
-        .padding()
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                    case .opened:
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        fallthrough
-                    @unknown default:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
-                }
+        VStack { // Vertical Stack that arranges its childeren in a vertical line
+            Button("Scan Barcode") { // creates the button
+                showScanner.toggle() // when button is tapped, the action is executed
+            }
+            .sheet(isPresented: $showScanner) {
+                BarcodeScannerViewController(scannedCode: <#Binding<String?>#>) 
             }
         }
     }
 }
 
-#Preview(windowStyle: .automatic) {
-    ContentView()
+struct ContentView_Previews: PreviewProvider { // structures that conforms to the 'PreviewProvider' protocol
+    static var previews: some View { // returns a view, which is 'ContentView'
+        ContentView()
+    }
 }
+
