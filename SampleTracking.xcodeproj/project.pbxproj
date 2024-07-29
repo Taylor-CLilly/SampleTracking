@@ -15,6 +15,10 @@
 		4D0106B22C3C423400D683C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0106B12C3C423400D683C2 /* Assets.xcassets */; };
 		4D0106B52C3C423400D683C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0106B42C3C423400D683C2 /* Preview Assets.xcassets */; };
 		4D0106BD2C41A73D00D683C2 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0106BC2C41A73D00D683C2 /* BarcodeScannerViewController.swift */; };
+		4D9485312C494FFE00DBFDCD /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9485302C494FFE00DBFDCD /* MockAPI.swift */; };
+		4D9485372C49616500DBFDCD /* WellPlateScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9485362C49616500DBFDCD /* WellPlateScannerViewController.swift */; };
+		4DE6E6B12C529CE600DE6A1F /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6E6B02C529CE600DE6A1F /* Speech.swift */; };
+		4DE6E6B32C56DA5600DE6A1F /* WellPlateWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6E6B22C56DA5600DE6A1F /* WellPlateWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4D0106B42C3C423400D683C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D0106B62C3C423400D683C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0106BC2C41A73D00D683C2 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		4D9485302C494FFE00DBFDCD /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		4D9485362C49616500DBFDCD /* WellPlateScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateScannerViewController.swift; sourceTree = "<group>"; };
+		4DE6E6B02C529CE600DE6A1F /* Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
+		4DE6E6B22C56DA5600DE6A1F /* WellPlateWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				4D0106A92C3C423200D683C2 /* SampleTrackingApp.swift */,
 				4D0106AB2C3C423200D683C2 /* ContentView.swift */,
 				4D0106BC2C41A73D00D683C2 /* BarcodeScannerViewController.swift */,
+				4D9485362C49616500DBFDCD /* WellPlateScannerViewController.swift */,
+				4DE6E6B22C56DA5600DE6A1F /* WellPlateWindow.swift */,
+				4DE6E6B02C529CE600DE6A1F /* Speech.swift */,
+				4D9485302C494FFE00DBFDCD /* MockAPI.swift */,
 				4D0106AD2C3C423200D683C2 /* ImmersiveView.swift */,
 				4D0106AF2C3C423200D683C2 /* ImageBasedLighting.skybox */,
 				4D0106B12C3C423400D683C2 /* Assets.xcassets */,
@@ -166,7 +178,11 @@
 			files = (
 				4D0106AC2C3C423200D683C2 /* ContentView.swift in Sources */,
 				4D0106AA2C3C423200D683C2 /* SampleTrackingApp.swift in Sources */,
+				4DE6E6B32C56DA5600DE6A1F /* WellPlateWindow.swift in Sources */,
+				4D9485372C49616500DBFDCD /* WellPlateScannerViewController.swift in Sources */,
+				4DE6E6B12C529CE600DE6A1F /* Speech.swift in Sources */,
 				4D0106BD2C41A73D00D683C2 /* BarcodeScannerViewController.swift in Sources */,
+				4D9485312C494FFE00DBFDCD /* MockAPI.swift in Sources */,
 				4D0106AE2C3C423200D683C2 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
