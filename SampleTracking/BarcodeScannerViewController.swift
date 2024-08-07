@@ -87,4 +87,3 @@ struct BarcodeScannerViewController: UIViewControllerRepresentable {
         }
     }
 }
-

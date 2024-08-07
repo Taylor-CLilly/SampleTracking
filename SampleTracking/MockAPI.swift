@@ -23,7 +23,7 @@ class MockAPI {
         "1234567890": Sample(id: "1234567890", name: "Sample A", description: "Description for Sample A", dateCollected: Date(), wellLocation: "A11"),
         "0987654321": Sample(id: "0987654321", name: "Sample B", description: "Description for Sample B", dateCollected: Date(), wellLocation: "G5"),
         "1122334455": Sample(id: "1122334455", name: "Sample C", description: "Description for Sample C", dateCollected: Date(), wellLocation: "C7"),
-        "P105701": Sample(id: "P105701", name: "Sample D", description: "Description for Sample D", dateCollected: Date(), wellLocation: "D7")
+        "AARUTH0009": Sample(id: "AARUTH0009", name: "Patient Dave S.", description: "Patient Sample for Tirzepatide Clinical Trials", dateCollected: Date(), wellLocation: "D7")
     ]
     
     // Function to fetch sample information based on the scanned barcode
